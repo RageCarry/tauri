@@ -1,5 +1,34 @@
 # Changelog
 
+## \[2.2.0]
+
+### New Features
+
+- [`f884bae75`](https://www.github.com/tauri-apps/tauri/commit/f884bae75b3ad8f8debfd29bb05ac9cbc9748c89) ([#11742](https://www.github.com/tauri-apps/tauri/pull/11742) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add `tauri::Builder::on_tray_icon_event` handler.
+- [`dc4d79477`](https://www.github.com/tauri-apps/tauri/commit/dc4d79477665bc3bfefb4048772414cf5d78e3df) ([#11628](https://www.github.com/tauri-apps/tauri/pull/11628) by [@SpikeHD](https://www.github.com/tauri-apps/tauri/../../SpikeHD)) Add `WebviewWindowBuilder/WebviewBuilder::extensions_path` on Linux and Windows.
+- [`020ea0556`](https://www.github.com/tauri-apps/tauri/commit/020ea05561348dcd6d2a7df358f8a5190f661ba2) ([#11661](https://www.github.com/tauri-apps/tauri/pull/11661) by [@ahqsoftwares](https://www.github.com/tauri-apps/tauri/../../ahqsoftwares)) Add badging APIs:
+
+  - `Window/WebviewWindow::set_badge_count` for Linux, macOS and IOS.
+  - `Window/WebviewWindow::set_overlay_icon` for Windows Only.
+  - `Window/WebviewWindow::set_badge_label`for macOS Only.
+- [`fc30b20be`](https://www.github.com/tauri-apps/tauri/commit/fc30b20bea125f647db00ca824663f8e1da4d61f) ([#11726](https://www.github.com/tauri-apps/tauri/pull/11726) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add `TrayIconBuilder::show_menu_on_left_click` method and deprecate `TrayIconBuilder::menu_on_left_click` for consistent naming and clarity.
+
+### Enhancements
+
+- [`d86aaccb0`](https://www.github.com/tauri-apps/tauri/commit/d86aaccb0b42760bb59bc04d74a6ea234bb64229) ([#11729](https://www.github.com/tauri-apps/tauri/pull/11729) by [@sandercox](https://www.github.com/tauri-apps/tauri/../../sandercox)) Add support for `TrayIconBuilder::menu_on_left_click` and `TrayIcon::set_show_menu_on_left_click` on Windows.
+
+### Bug Fixes
+
+- [`46935212b`](https://www.github.com/tauri-apps/tauri/commit/46935212b61da44dc82dfeb803fceebf5659f7b7) ([#11658](https://www.github.com/tauri-apps/tauri/pull/11658) by [@Legend-Master](https://www.github.com/tauri-apps/tauri/../../Legend-Master)) Fix `.json5` capability files not recognized even with `config-json5` feature enabled
+
+### Dependencies
+
+- Upgraded to `tauri-runtime@2.3.0`
+- Upgraded to `tauri-runtime-wry@2.3.0`
+- Upgraded to `tauri-utils@2.1.1`
+- Upgraded to `tauri-macros@2.0.4`
+- Upgraded to `tauri-build@2.0.4`
+
 ## \[2.1.1]
 
 ### Bug Fixes

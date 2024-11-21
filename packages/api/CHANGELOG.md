@@ -1,5 +1,27 @@
 # Changelog
 
+## \[2.2.0]
+
+### New Features
+
+- [`020ea0556`](https://www.github.com/tauri-apps/tauri/commit/020ea05561348dcd6d2a7df358f8a5190f661ba2) ([#11661](https://www.github.com/tauri-apps/tauri/pull/11661) by [@ahqsoftwares](https://www.github.com/tauri-apps/tauri/../../ahqsoftwares)) Add badging APIs:
+
+  - `Window/WebviewWindow::set_badge_count` for Linux, macOS and IOS.
+  - `Window/WebviewWindow::set_overlay_icon` for Windows Only.
+  - `Window/WebviewWindow::set_badge_label`for macOS Only.
+- [`fc30b20be`](https://www.github.com/tauri-apps/tauri/commit/fc30b20bea125f647db00ca824663f8e1da4d61f) ([#11726](https://www.github.com/tauri-apps/tauri/pull/11726) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add `TrayIcon.setShowMenuOnLeftClick` method and deprecate `TrayIcon.setMenuOnLeftClick` to match the Rust API.
+- [`fc30b20be`](https://www.github.com/tauri-apps/tauri/commit/fc30b20bea125f647db00ca824663f8e1da4d61f) ([#11726](https://www.github.com/tauri-apps/tauri/pull/11726) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add `TrayIconOptions.showMenuOnLeftClick` field and deprecate `TrayIconOptions.menuOnLeftClick` to match the Rust API.
+
+### Enhancements
+
+- [`fc30b20be`](https://www.github.com/tauri-apps/tauri/commit/fc30b20bea125f647db00ca824663f8e1da4d61f) ([#11726](https://www.github.com/tauri-apps/tauri/pull/11726) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add support for `TrayIconOptions.menuOnLeftClick` option and `TrayIcon.setMenuOnLeftClick` on Windows.
+
+### Bug Fixes
+
+- [`12a48d1e2`](https://www.github.com/tauri-apps/tauri/commit/12a48d1e26a83c3915eaa0687b196fbc8f2d457a) ([#11741](https://www.github.com/tauri-apps/tauri/pull/11741) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Fix error when calling `PredefinedMenuItem.new` to create an `About` menu item that uses an `Image` instance for the about icon.
+- [`12a48d1e2`](https://www.github.com/tauri-apps/tauri/commit/12a48d1e26a83c3915eaa0687b196fbc8f2d457a) ([#11741](https://www.github.com/tauri-apps/tauri/pull/11741) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Fix error when calling `IconMenuItem.new` using an `Image` instance for the icon.
+- [`b63262cd4`](https://www.github.com/tauri-apps/tauri/commit/b63262cd4d6a3667ca1664607a0a5444ad79fe0e) ([#11724](https://www.github.com/tauri-apps/tauri/pull/11724) by [@FabianLars](https://www.github.com/tauri-apps/tauri/../../FabianLars)) Removed the generic in the type of the callback function argument in `mockIPC` which prevented its proper use in tests using TypeScript.
+
 ## \[2.1.1]
 
 ### Bug Fixes
