@@ -1296,7 +1296,7 @@ impl<R: Runtime> Default for Builder<R> {
 impl<R: Runtime> Builder<R> {
   /// Creates a new App builder.
   pub fn new() -> Self {
-    let invoke_key = crate::generate_invoke_key().unwrap();
+    let invoke_key = "test_key".to_string();
 
     Self {
       #[cfg(any(windows, target_os = "linux"))]
