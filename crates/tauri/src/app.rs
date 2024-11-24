@@ -1296,8 +1296,7 @@ impl<R: Runtime> Default for Builder<R> {
 impl<R: Runtime> Builder<R> {
   /// Creates a new App builder.
   pub fn new() -> Self {
-    let invoke_key = "test_invoke_key";
-
+    let invoke_key = "test_invoke_key".to_string();
     Self {
       #[cfg(any(windows, target_os = "linux"))]
       runtime_any_thread: false,
